@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukeiz Buzz - Transkrip Taushiyyah</title>
+    <style>
+        :root {
+            --primary-color: #8b4513;
+            --secondary-color: #D4AF37;
+            --bg-color: #fcfbf9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6b3410;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: var(--secondary-color);
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover, nav button.active {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 60vh;
+        }
+
+        .section-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary-color);
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .section-container.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #6b3410;
+            margin-top: 30px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .arabic {
+            font-size: 1.2rem;
+            text-align: right;
+            direction: rtl;
+            color: var(--primary-color);
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .speaker-tag {
+            font-weight: bold;
+            color: var(--primary-color);
+            background-color: #f0e6df;
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-top: 5px solid var(--secondary-color);
+            margin-top: 40px;
+        }
+        
+        .btn-action {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        
+        .btn-action:hover {
+            background-color: #5c2e0b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ukeiz Buzz</h1>
+        <p>Arsip Digital & Portofolio Karya</p>
+    </header>
+
+    <nav>
+        <button class="nav-btn active" onclick="showSection('home')">Home</button>
+        <button class="nav-btn" onclick="showSection('karya')">Karya Saya</button>
+        <button class="nav-btn" onclick="showSection('tentang')">Tentang</button>
+    </nav>
+
+    <main>
+        <section id="home" class="section-container active">
+            <h2>Selamat Datang</h2>
+            <p>Selamat datang di platform Ukeiz Buzz. Ini adalah ruang digital yang didedikasikan untuk mendokumentasikan karya, arsip teks, serta materi pembelajaran.</p>
+            <p>Klik tombol di bawah ini atau gunakan navigasi di atas untuk mulai membaca transkrip kegiatan Musyawarah Adwiyyah.</p>
+            <div style="text-align: center;">
+                <button class="btn-action" onclick="showSection('karya')">Baca Transkrip</button>
+            </div>
+        </section>
+
+        <section id="karya" class="section-container">
+            <h2>Transkrip Musyawarah Adwiyyah</h2>
+            
+            <span class="speaker-tag">MC (Pembukaan)</span>
+            <p>Assalamu'alaikum warahmatullahi wabarakatuh.</p>
+            <p>Alhamdulillah, alhamdulillahilladzi anzala 'ala 'abdihil kitab walam yaj'al lahu 'iwaja. Atamma nurahu wa azharal haqqa bil haqqi, akhzal ahzab wa ja'ala kaidal kafirina fi taba'. Asyhadu an laa ilaaha illallah dzul 'arsyi rafi'ud darajat, al-muhdits likullil hawadits. Wa asyhadu anna sayyidana Muhammadan 'abduhu wa rasuluh, al-mutahaqqiq bikamalil awshaf, 'afiful lisan, fa'iqul hinan, samiqul qimam, muta'addidul qimam, muti'ul aqnaf. Allahumma shalli wa sallim wa barik 'alaih.</p>
+            
+            <p>Ladies and gentlemen, time keeps running in uncertainty. The world now is reeking with disaster. The thirst for destruction—human in ignorance and his arrogance—and fall accidentally to the way they think is right. The honesty and truth they hide. Lies and falsity is greatly glorified.</p>
+            <p>Now, the world needs generations that see in the faith as a compass to educate and teach the world the secret of life. Telling the truth, not just define reality. And here we are, Musyawarah Adwiyyah, to prepare a fair, a taqwa, and honest leader to become the bright civilization.</p>
+            <p>Ladies and gentlemen, before we start this event, it's better for us to hear the recitation of the Holy Quran, which will be recited by our brother Fauzan Azim. I invite him with gratitude.</p>
+
+            <span class="speaker-tag">Fauzan Azim (Qari)</span>
+            <p class="arabic">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ. إِنَّ الَّذِينَ كَفَرُوا بِآيَاتِنَا سَوْفَ نُصْلِيهِمْ نَارًا كُلَّمَا نَضِجَتْ جُلُودُهُمْ بَدَّلْنَاهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا الْعَذَابَ ۗ إِنَّ اللَّهَ كَانَ عَزِيزًا حَكِيمًا...</p>
+            
+            <span class="speaker-tag">MC</span>
+            <p>I give thanks to Fauzan Azim for the recitation of the Holy Quran. I hope all of our activity in this event will be covered by Allah Subhanahu wa Ta'ala's mercy.</p>
+            <p>Ladies and gentlemen, for the next opportunity, is some forward and opening of Musyawarah Adwiyyah from Headmaster of ITTI of Al-Firdaus, Al-Ustadz Abu Abdurrahman. Time and place are for him.</p>
+
+            <hr style="margin: 30px 0; border: 1px solid #eee;">
+
+            <span class="speaker-tag">Ust. Abu Abdurrahman (Taushiyyah)</span>
+            <p>Innalhamdalillah nahmaduhu wa nasta'inuhu wa nastaghfiruh. Wa na'udzubillahi min syururi anfusina wa min sayyi'ati a'malina, mayyahdihillahu fala mudhillalah, wa mayyudhlilhu fala hadiyalah. Asyhadu an laa ilaaha illallah wa asyhadu anna Muhammadan 'abduhu wa rasuluh. Amma ba'd.</p>
+            <p>Puji dan syukur hanya untuk Allah Subhanahu wa Ta'ala. Tidak terasa bahwa antum semua sudah sampai kepada kegiatan, yaitu Musyawarah Adwiyyah As-Tsaniyah. Berarti di tahun ini, terutama memasuki tahun ajaran baru tahun 2024-2025, harus memiliki pemimpin yang baru, semangatnya lebih baru.</p>
+            <p>Karena yang kelas 6 sekarang mau masuk kepada program pengabdian. Bahkan ada yang sangat luar biasa menurut saya, yaitu kepemimpinan Lajnah UG yang sangat lama, tiga periode antum memimpin. Luar biasa, untuk menjaga apa? Supaya tidak luar binasa, dan alhamdulillah terjaga. Kestabilan itu harus senantiasa terjaga dari tahun ke tahun. Kalau untuk RG ini adalah Musyawarah Adwiyyah kedua, kalau UG kesatu harusnya.</p>
+            
+            <h3>Empat Karakter Pemimpin Ideal</h3>
+            <p>Baik RG maupun UG, dengan adanya Musyawarah Adwiyyah ini melahirkan, menghasilkan, memunculkan pemimpin—baik itu ketua dan wakilnya, serta nanti para pembantunya—yang tanggung jawab. Kalau ana boleh punya cita-cita, sesuai dengan yang dimiliki oleh sifat Rasul; memiliki jiwa yang <em>shiddiq</em>, <em>amanah</em>, <em>fathonah</em>, dan <em>tabligh</em>. Berangkat dari empat ini saja, insya Allah akan bisa mengantarkan yang kemarin antum sodorkan tema ke saya, yaitu bisa menggolkan visi dan misi pondok pesantren. Bahkan ke sananya demi kejayaan Islam, dan ke sananya lagi adalah demi kesejahteraan keluarga antum di masing-masing nanti. Modalnya empat saja.</p>
+            
+            <p>Jadi harapan kami adalah, dari tahun ke tahun itu pelihara karakter yang barusan itu. Semua <em>kullukum ra'in</em>, antum itu semuanya pemimpin. Kalau mulai dari individunya sudah baik, sudah berkarakter yang tadi, sudah memiliki integritas. <em>Shiddiq</em> itu bisa dikatakan integritas; jujur, selalu benar. Bukan ingin selalu merasa paling benar, bukan. Tetapi kita posisikan senantiasa kita ada dalam <em>shiratal mustaqim</em>.</p>
+            <p>Bahasa simpelnya, <em>shiddiq</em> itu benar, jujur. <em>'Alaikum bish-shidqi fa inna shidqa yahdi ilal birr, fa innal birra yahdi ilal jannah.</em> Lihat petunjuknya itu. Jadi kalau antum punya karakter integritas yang sangat tinggi, luar biasa. Kebenarannya akan diikuti oleh yang lain. Kemudian kebenarannya juga, sifat <em>shiddiq</em>-nya juga akan membuat dia lebih berwibawa dan bercahaya, tidak menyerah, pantang mundur dan terus akan berjalan ke depan. Dan antum akan terlindungi seperti terlindunginya badan antum dari gigitan nyamuk karena pakai Autan, begitu. Jadi setan oge mau nyoco antum tuh nyiduh heula, "Cuih, pahit," begitu.</p>
+            
+            <p>Itulah yang dimiliki Nabi Muhammad, sampai dengan punya sifat <em>shiddiq</em>-nya itu bisa melembutkan Yahudi yang keras hati, kafir Quraisy yang sangat bengis, bisa meluluhlantakkan hati-hati yang keras dengan kejujuran. Kalau kata orang sombong mah, "Polos," katanya. Wajah polos Nabi Muhammad itu bukan polos, justru <em>shiddiq</em> dan <em>amanah</em>.</p>
+            
+            <h3>Membantah Stigma Pesantren</h3>
+            <p>Awas, ketika saya bilang <em>shiddiq</em> dan <em>amanah</em> itu bukan culun. Jadi ini perhatikan, banyak orang yang berprasangka buruk ke pesantren. "Budak pesantren mah culun cenah, curun, jorok." Enggak. TMI jauh daripada culun dan jorok. Ya, enggak. Karena calon-calon pemimpin ini dilengkapi—pribadi-pribadi muslim ini dilengkapi—dengan <em>shiddiq, amanah, fathonah</em>. Apa <em>fathonah</em> itu? Oh, cerdaslah. Cerdas.</p>
+            <p>Cekatan dalam mengambil keputusan, luar biasa. Yang menjadi pertimbangan adalah <em>shiddiq</em> dan <em>amanah</em>-nya tadi. Selain cerdas, <em>tabligh</em>. Apa itu <em>tabligh</em> itu? Uh, luar biasa, dia bisa mengkomunikasikan baik dengan bawahannya, dengan atasannya, semuanya dia bisa merangkulnya; bermasyarakatlah lamun bahasa urang mah. Itulah Nabi Muhammad, makanya dia nembus. Ke bawahan nembus apalagi ke atas, bae apalagi kegedean-kegedean Quraisy itu bisa kalah bukan dengan pedang, bukan dengan kekerasan.</p>
+            <p>Makanya perhatikan ya, ana pengen nih di angkatan yang sekarang di Musyawarah Adwiyyah As-Tsaniyah, ana ingin muncul tidak dengan kekerasan. Ana pengen coba nanti siapa yang jadi pemimpinnya antum, ana pengen ini teu ranteng kitu kumaha tah carana? Ya empat yang tadi teladani, semua santri yang ada di sini punya empat ini. Ieu mah atuh da aduh, ngurus rambut wae teu bisa. Coba kalau antum berjiwa <em>shiddiq, amanah, fathonah, tabligh</em>. Harus cerdaslah. "Ustaz Abu mah ngamek wae." Bukan ngamek, ente tidak memiliki empat sifat yang ini.</p>
+            
+            <h3>Refleksi Kejujuran dalam Sikap</h3>
+            <p>Coba kalau punya <em>shiddiq</em>, dari <em>shiddiq</em> aja dulu. Benar enggak antum coba buka kopeahnya, benar enggak antum kitu rambutnya? Jujur. Ya jujur. Ya begitulah <em>shiddiq</em>. Coba berdiri biar kelihatan sama yang lain. Jangan-jangan antum jadi ketua Lajnah nanti. Kelas berapa antum? Kelas 4? Oh alila keneh atuh. Can manjing. Nah begini rambutnya. Nah ini sikap jujur. Jadi sikap jujur itu harus direfleksikan dalam diri, begitu. Nah ini salah satu refleksinya. Ya. Inilah bentuk kejujuran seorang santri; jujur, benar.</p>
+            <p>Kenapa antum ngemasukin baju? Antum ngemasukin baju naon? Kenapa? Takut tidak jujur? Coba berdiri Dam. Oh hayang kapilih jadi ketua Lajnah ini mah atuh. Ah eta calanana kumaha eta teh? Ah ini belum jujur ini. Celanana rada merecet. Lamun antum nyeri beuteung merecet wajar, ari celana mah nya kudu dipake karbonas jeung pake naon tah obat naon? Diapet? Heueuh ma enya. Nah, sudah antum belum jujur. Duduk.</p>
+            <p>Ah perhatikan, ana mau nanti siapapun yang menjadi pemimpinnya bisa bekerjasama. Bekerjasama dalam hak, bukan dalam keburukan kade. Bukan dalam keburukan. Harus tahu bagaimana, pesantren ini harus pengen seperti apa? Paling tidak, perhatikan, yang sudah pernah aktif di Lajnah Thullabiyah, misalkan dari kelas 6 yang aktif semuanya, perhatikan antum itu calon-calon menteri. Iyeu geus kudu diganti menteri teh ayeuna mah, jeung presidenna, Ustaz Syarif urang ganti lah. Diganti oleh antum generasi yang akan datang nanti. Polisina, ABRI-na. Makanya perhatikan, tidak boleh memandang picik ke Al-Firdaus itu. "Wah Firdaus mah jigana anti jadi polisi." Kata siapa? Justru polisi itu harus dari antum. Biar jujur semuanya. Biar bener. Presidenna, wakilna, menteri agamana, semua dari orang-orang yang memiliki empat sifat yang luar biasa: jujur, amanah coba, cerdas. Hebat komunikasinya. Nah harus lahir itu.</p>
+
+            <h3>Ketegasan Terhadap Jejaring Sosial</h3>
+            <p>Masuk ke kelas rapi, nah itu jujur itu. Sesuaikan dengan apa yang diharapkan dan diinginkannya. Antum sekarang berada di sini harus jujur kepada siapa? Paling tidak kepada siapa? Selain asatidz? Ada yang lebih penting daripada teman sebaya, apa itu? Antum itu amanah loh sekarang tuh. Kepada kedua orang tua. Harus jujur kepada kedua orang tua. Bagaimana cara jujur kepada orang tua? Kan antum tidak ada orang tuanya di sini. Belajar taat ke pesantren, itulah kejujuranmu kepada orang tua. Tidak neko-neko, taati. Dicukur teu disuruh, itu salah satu jujur itu. Dan kalau antum sudah jujur, maka tahapan yang keduanya akan tercapai. Apa itu? <em>Amanah</em>, berarti antum termasuk kepada yang amanah.</p>
+            <p>Awas ini ana takut lupa ya, sekaligus sekarang. Jadi perhatikan, RG, perhatikan ana sudah perjanjian dengan UG. Dari mulai tahun sekarang, sudah tidak ada lagi jejaring sosial. Tidak boleh semuanya menggunakan jejaring sosial. Baik IG, Facebook, semuanya. Maka muncul saja ada satu di antara antum, maka itu mamnu', <em>haramun 'alaikum antasy-tarik fil imtihan hifdzil quran</em>. Karena ini sudah membuat kegaduhan. Untuk siapa? Untuk tingkat Tsanawiyah.</p>
+            <p>Di Tsanawiyah sekarang, kemarin Mudir Am itu mengeluhkan terkait jejaring sosial di Tsanawiyah. Ternyata hampir rata-rata mereka bilang, "Ustaz, kenapa Mualimin dibiarkan jejaring sosial? Aku punya kakak di Mualimin, main jejaring sosial." Weh, jadi ngiblat ke TMI. Nah ini harus dari mulai sekarang ditertibkan. Para Murabbi Murabbiyah. Jadi kalau ada, langsung catat, nanti kita sidang, disidangkan.</p>
+            <p>Coba antum stop itu selama di rumah, fokuskan ke hafalan Quran, insya Allah semuanya jadi hafidz Quran 30 juz. Moal itu-itu aja yang hafidz Quran itu. Saya fokus aja. Beres TMI, silakan. Antum berkarya. Gunakan ini dengan sebaik mungkin. Itu ada masukan. Terutama amanah dari Mudir Am.</p>
+
+            <h3>Pesan untuk Pengabdian dan Liburan</h3>
+            <p>Jadi nanti UG ya, kalau ada RG yang nembak ke antum, langsung laporkan. <em>Des ah kade ah, jangan, langsung des eit, des eit, hait, weh</em>, tahan langsung. Langsung antum angkat tangan, "Ustaz abdi mah henteu, demi Allah wallahi. Dia yang mulai. Ana mah engga ustaz. Dia yang nge-WA." Laporkeun langsung. Biar dia yang dihukumnya. Kalau pengabdian ke mana? Gozi ke mana? Awas lagi ada hubungan dengan pengabdian. Curi-curi hati. Enggak boleh.</p>
+            <p>Belajar konsentrasi. Semasa nanti libur panjang, liburnya tuh panjang sekali. Masuk itu kisaran tanggal 12 Juli. Wah 1 bulan. Coba, yang 1 bulan ini akan memperlihatkan jati dirimu yang sebenarnya. Apakah kamu itu umat Nabi Muhammad atau umat Abu Jahal? Atau Abu Lahab? Nanti akan kelihatan tuh. Dan di tahun sekarang insya Allah kita akan lebih tegas ya, dalam hukuman insya Allah. Karena sekarang santrinya sudah mulai banyak. Awas ya, tahun ajaran baru akan masuk santri baru, dan lumayan cukup banyak. Maka antum yang kelas 4 sekarang akan jadi kelas 5, yang kelas 5 akan jadi kelas 6. Antum sebagai <em>role model</em>. Yang kelas 6 antum akan membantu kami menjadi tim yang kuat dan solid, ya menjadi pengabdian, itu pun sebagai <em>role model</em>.</p>
+            
+            <p>Maka antum harus menjadi contoh, menjadi uswah yang baik. Begitu. Terutama nanti di kegiatan libur yang sangat luar biasa panjang. Coba bantu orang tua. Ieu mah libur saeutik buuk geus siki ririwil, aduh ieu mah. Baju ya coba disesuaikan. Ya bahwa antum itu adalah seorang santri yang sedang didambakan dan diharapkan kehadirannya oleh masyarakat. Aya di masjid membantu dan sebagainya. Apalagi nanti kurban. Coba bantuan, lain bantuan nyokot dagingna euy. Bawa peso jeung bedog, ikut ngarecah, meulahan, ngiloan, begitu.</p>
+
+            <h3>Penutup</h3>
+            <p>Jadi sekali lagi kepada seluruh santri terutama yang kelas 5, yang sebentar lagi antum akan melakukan Musyawarah Adwiyyah As-Tsaniyah, mudah-mudahan di antara antum ada yang akan menjadi ketua dan wakil ketua Lajnah baik RG maupun UG yang lebih bertanggung jawab ya, lebih disiplin, dan lebih bisa diajak kerja sama untuk mensukseskan visi misi pondok pesantren ke depan. Dan yang lebihnya lagi adalah membentuk karakter-karakter yang luar biasa melahirkan calon-calon pemimpin di masa yang akan datang, yang jujur, amanah, berkomunikasi yang baik, serta memiliki kecerdasan.</p>
+            <p>Itu saja yang dapat disampaikan. Dibuka dulu ya? Oh. Dengan mengucapkan <em>bismillahirrahmanirrahim</em>, Musyawarah Adwiyyah As-Tsaniyah dibuka. Itu saja yang dapat disampaikan. <em>Aqulu qawli hadza wa astaghfirullahali walakum, assalamu'alaikum warahmatullahi wabarakatuh.</em></p>
+            
+            <hr style="margin: 30px 0; border: 1px solid #eee;">
+            
+            <span class="speaker-tag">MC (Penutupan)</span>
+            <p>I give thanks to Ustadz Abu Abdurrahman for his very inspiring forward. Hopefully, what has been conveyed can be useful for us.</p>
+            <p>Ladies and gentlemen, we have reached the end of the event. And remember, this is not the end, but the beginning of our new journey to reach Allah's mercy. Thanks for all of participants in this event. I hope to see you all in our future events where we can continue and grow and succeed together.</p>
+            <p><em>Akhirul kalam, ijhad wala taksal wala takun ghafilar fannadamatul uqba liman yatakassal. Wassalamu'alaikum warahmatullahi wabarakatuh.</em></p>
+        </section>
+
+        <section id="tentang" class="section-container">
+            <h2>Tentang Ukeiz Buzz</h2>
+            <p>Platform portofolio ini dirancang menggunakan basis HTML, CSS, dan JavaScript untuk memastikan performa yang ringan tanpa harus memuat ulang halaman (*Single Page Application*). </p>
+            <p>Desainnya difokuskan pada skema warna alam yang bernuansa wibawa dan estetik, bertujuan untuk memberikan kenyamanan membaca, terutama untuk naskah atau dokumentasi panjang.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ukeiz Buzz. Didesain secara eksklusif untuk dokumentasi struktur portofolio Anda.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Sembunyikan semua section
+            const sections = document.querySelectorAll('.section-container');
+            sections.forEach(sec => sec.classList.remove('active'));
+            
+            // Hapus status aktif dari semua tombol navbar
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Tampilkan section yang dipilih dan beri styling aktif di tombolnya
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
